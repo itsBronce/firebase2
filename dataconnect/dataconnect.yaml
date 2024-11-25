@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "CALVOS"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "CALVOS-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
